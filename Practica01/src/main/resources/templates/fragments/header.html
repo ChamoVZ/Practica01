@@ -3,6 +3,11 @@
 <body>
     <div th:fragment="header" class="bg-primary text-white py-3">
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary container">
+            <picture>
+  <source srcset="..." type="image/svg+xml">
+  <img src="https://lh3.googleusercontent.com/fife/ALs6j_EbSSGcheEFFXCaJd-0zxHj0B1RcV8bpaYcM755VwWjaFQEqeIBFcQGURK4xnelA4IGmLTia81TVoWhua2FxmfzGhTP7W30V-NFFZ6WzLN9Ww72NtO7JwNsGzxV62AQcOQKomQcl_Ap-nCU2k4qoHrJl0imSevGq0dpMcikeE2oDPW6YDH7bYIY4004cjwqAJqFeE--4en5O-L-wvAwLWbPN8z4H_Qp25yYNApXMLOo5iD9b7qrNujkUujSND-QpJhl1ElcMbO0areCxLIkQjopnllqAsviimc9VmeXongB00rhXoD6AqaepXL3Ux5O6AVln24IJmEoefVxYAQ6y5OsRlOv6yh8e0tCXbXuZ92WkUzAJdxfFQolr3LRDW2rFXMjVoIhDxVu1eZ4tjbOuN0oRq8Vy4W6dy5Xnr8EaR0OwVfxAJdMy-cLZVPC-m4RqHaEcQ4wBItRN1t3iPKQsa4ZYtzXKTtLMJTqiub8IAKRPm9Lq16ifcCdcZF1wSpfoQSGVoU96u6BKsQpMnrd6X5LL2gbH9d-x61yhQKEkPhCEMhqLcSF3S2ycg9UJrLNgFOZ7FOolpIqOdFK3CHDCnd-nPmIqln520rYTILZHtfzuU6DYNvvGhVdUere0UOAEtTfSL6UIVzS0c70zsa0TxJV7sWBxL6FyWYt1AO1oJlTwuckfBEJ8pic6smEhsyB2bBfRbhDhEw3knYJ9cYGY_j6KlHyySjSxNcpJiwcJHzFqtrnaerxsvRV6iBwJ3g5pCAU1LxCMl_fobA9MB6bwc_WgB9Zv9Q07rKrhq2hkJCx18_jk7ul5DDwM_S6xWDLfpUqlAV637kAJqA26fst36hM9bQEqDi52jOSRdJTMT3K3aP4U_O8aAdvuMrfoIFVSey9A2-TVXoeLpR1cgptHVLV8s0d0FLg21JTxDXjLiPiS0jwm0OLWvtAFb2_rDwhiEpEfRtu5iJl9nPtX3QlNz7id5P0fDfEGGCl1boIVTPZWk2v9i86Qv4W7x2NCFp_aVtm-UTxflnkuXNYw7acjezTuz4oipDvLYlRRqK8dzTqz0C_yTnTFluqB2NGjfIadeejmpVw-epRWh8jxt_BpsmVQfSObJpRAe5vXayrAx2v3clxjqbJIzCaIIgOudoz3f7xFWiV8x9LpabxW1raCxv238ToSxD-UOOCa61n6Urkh-FiC1XGq0HmmH-XKwXtZ_CQJ9IMRpJnP9oS_aRPhe5H3vzU1c6_Rli1PDLSGgFwSXW0VaSscCHn52DUTSFOI7fumqx7rC4Ekfkm6GCearmVORJO5ifzpL4MfVU7wS6f9bWQoFlnudFKFRntbjiydg77RWnphJCdsxKEct12Sw=s256-w256-h256-n-k?authuser=0" class="img-fluid img-thumbnail" alt="...">
+
+            </picture>
             <a class="navbar-brand" th:href="@{/arboles/}">Gestión de Árboles</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -15,9 +20,14 @@
                     <li class="nav-item">
                         <a class="nav-link" th:href="@{/arboles/nuevo}">Crear Nuevo Árbol</a>
                     </li>
+                    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="BUSCAR" aria-label="Search"/>
+      <button class="btn btn-outline-success" type="submit">Buscar Arbol</button>
+    </form>
                 </ul>
             </div>
         </nav>
+        
     </div>
 </body>
 </html>
